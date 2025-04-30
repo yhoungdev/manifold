@@ -4,7 +4,7 @@ use dotenv::dotenv;
 use std::env;
 
 use client::{PlunkClientTrait, PlunkPayloads};
-use common::types::plunk_types::PlunkClient;
+use common_manifold::types::plunk_types::PlunkClient;
 
 #[tokio::main]
 async fn main() {
