@@ -1,4 +1,4 @@
-use common::types::plunk_types::PlunkClient;
+use common_manifold::types::plunk_types::PlunkClient;
 use reqwest::Client;
 use serde::{Deserialize, Serialize};
 
