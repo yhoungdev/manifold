@@ -12,7 +12,7 @@ pub struct PlunkPayloads {
 const PLUNK_API: &str = "https://api.useplunk.com/v1/send";
 
 pub trait PlunkClientTrait {
-    fn new(public_api_key: String, secret_api_key: Option<String>) -> Self;
+    fn new(public_api_key: String) -> Self;
 
     async fn send_transactional_email(
         &self,
@@ -21,11 +21,8 @@ pub trait PlunkClientTrait {
 }
 
 impl PlunkClientTrait for PlunkClient {
-    fn new(public_api_key: String, secret_api_key: Option<String>) -> Self {
-        PlunkClient {
-            public_api_key,
-            secret_api_key,
-        }
+    fn new(public_api_key: String) -> Self {
+        PlunkClient { public_api_key }
     }
 
     async fn send_transactional_email(
@@ -37,7 +34,7 @@ impl PlunkClientTrait for PlunkClient {
             .post(PLUNK_API)
             .header("Content-Type", "application/json")
             .header("Authorization", format!("Bearer {}", self.public_api_key))
-            .body(serde_json::to_string(&payload)?)
+            .json(&payload)
             .send()
             .await?;
 
