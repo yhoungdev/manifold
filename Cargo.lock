@@ -9,15 +9,27 @@ version = "0.1.0"
 [[package]]
 name = "kudi"
 version = "0.1.0"
+dependencies = [
+ "common",
+]
 
 [[package]]
 name = "plunk"
 version = "0.1.0"
+dependencies = [
+ "common",
+]
 
 [[package]]
 name = "sendgrid"
 version = "0.1.0"
+dependencies = [
+ "common",
+]
 
 [[package]]
 name = "twilio"
 version = "0.1.0"
+dependencies = [
+ "common",
+]

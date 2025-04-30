@@ -1,2 +1,2 @@
-mod kudi_types;
-mod plunk_types;
+pub mod kudi_types;
+pub mod plunk_types;
