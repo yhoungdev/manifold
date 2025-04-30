@@ -1,0 +1,10 @@
+[package]
+name = "common_manifold"
+version = "0.1.0"
+edition = "2021"
+description = "Common utilities for plunk SDK"
+license = "MIT"
+authors = ['Emmanuel']
+
+[dependencies]
+
