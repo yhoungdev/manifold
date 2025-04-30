@@ -1,6 +1,6 @@
 [package]
-name = "plunk-sdk"
-version = "0.1.1"
+name = "plunk_sdk"
+version = "0.1.0"
 edition = "2021"
 description = "A fast, simple, and easy-to-work-with Rust SDK for Plunk — send emails without the hassle."
 license = "MIT"
