@@ -1,7 +1,8 @@
 [package]
-name = "kudi"
+name = "kudi_sdk"
 version = "0.1.0"
 edition = "2021"
+authors = ["Emmanuel Obiabo"]
+description = "A fast, simple, and easy-to-work-with Rust SDK for Kudi, send SMS without the hassle."
 
 [dependencies]
-common = { path = "../common"}
