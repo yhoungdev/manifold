@@ -7,7 +7,7 @@ use reqwest::Client;
 
 impl KudiClient {
     pub fn new() -> Self {
-        Self { token, sender_id }
+        Self { token, sender_id}
     }
 
     pub fn send_sms_otp(&self, payload: SmsOtpPayload) -> Result<(), Box<dyn std::error::Error>> {
@@ -67,7 +67,7 @@ impl KudiClient {
     pub fn send_bulk_sms(
         &self,
         payload: SendBulkSmsPayload,
-    ) -> Result<String, Box<()>> {
+    ) -> Result<String, Box<() , dyn std::error::Error>> {
         let recipients_combined = payload.recipients.join(",");
 
         let api_url = format!(
