@@ -1,10 +1,6 @@
 use crate::types::{KudiClient, KudiMessage, SenderIdStruct, SmsOtpPayload};
 
 use reqwest::Client;
-use serde:: Serialize;
-
-
-
 
 impl KudiClient {
     pub fn new() -> Self {
