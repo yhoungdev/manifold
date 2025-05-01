@@ -3,8 +3,7 @@ name = "kudi_sdk"
 version = "0.1.0"
 edition = "2021"
 authors = ["Emmanuel Obiabo"]
-description = "A fast, simple, and easy-to-work-with Rust SDK for Kudi, send SMS without the hassle."
-
+description = "A lightweight and developer-friendly Rust SDK for Kudi, designed to simplify SMS delivery with speed and reliability."
 
 [dependencies]
 reqwest = { version = "0.12.15" , features = ["json"]}
