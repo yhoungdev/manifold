@@ -4,6 +4,10 @@ version = "0.1.0"
 edition = "2021"
 authors = ["Emmanuel Obiabo"]
 description = "A lightweight and developer-friendly Rust SDK for Kudi, designed to simplify SMS delivery with speed and reliability."
+license = "MIT"
+repository = "https://github.com/yhoungdev/manifold/tree/main/crates/kudi"
+categories = ["email" , "api-bindings" , "development-tools"]
+
 
 [dependencies]
 reqwest = { version = "0.12.15" , features = ["json"]}

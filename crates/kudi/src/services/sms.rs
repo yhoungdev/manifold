@@ -1,8 +1,6 @@
 use crate::types::{
-    KudiClient, KudiMessage, SendBulkSmsPayload, SenderIdCheckResponse, SenderIdStruct,
-    SmsOtpPayload,
+    KudiClient, SendBulkSmsPayload, SenderIdCheckResponse, SenderIdStruct, SmsOtpPayload,
 };
-use std::fmt::format;
 
 use crate::prelude::SendCorporateEmail;
 use reqwest::Client;
