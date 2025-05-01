@@ -1,4 +1,4 @@
-# Plunk Email SDK
+\# Plunk Email SDK
 
 A simple Rust SDK for sending transactional emails using the Plunk API.
 
@@ -22,8 +22,11 @@ PLUNK_PRIVATE_KEY=your_plunk_api_key_here
 ## Quick Start
 
 ```rust
-use client::{PlunkClientTrait, PlunkPayloads};
-use common_manifold::types::plunk_types::PlunkClient;
+use plunk::prelude::{
+    PlunkClient,
+    PlunkClientTrait,
+    PlunkPayloads,
+};
 
 // Initialize the client
 let plunk_key = env::var("PLUNK_PRIVATE_KEY").expect("Set PLUNK_PRIVATE_KEY in .env");
@@ -85,3 +88,5 @@ match client.send_transactional_email(payload).await {
 
 ## License
 MIT
+
+## NB: If you don't see the mail, check your span please ( You can message plunk why your send is sending to spam)
