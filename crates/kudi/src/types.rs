@@ -15,10 +15,29 @@ pub struct SmsOtpPayload {
 }
 
 #[derive(Serialize)]
-pub struct  SenderIdStruct {
-   pub token: String,
-   pub message: String,
-   pub sender_id: String,
+pub struct SenderIdStruct {
+    pub token: String,
+    pub message: String,
+    pub sender_id: String,
+}
+
+pub struct SendBulkSmsPayload {
+    pub token: String,
+    pub recipients: Vec<String>,
+    pub message: String,
+    pub sender_id: String,
+}
+
+#[derive(Serialize)]
+pub struct SendCorporateEmail {
+    sender_id: String,
+    recipients: Vec<String>,
+    message: String,
+}
+
+pub struct SenderIdCheckResponse {
+    pub status: String,
+    pub message: Option<String>,
 }
 
 pub struct KudiMessage {}
