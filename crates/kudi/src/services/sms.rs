@@ -67,7 +67,7 @@ impl KudiClient {
     pub fn send_bulk_sms(
         &self,
         payload: SendBulkSmsPayload,
-    ) -> Result<String, Box<dyn std::error::Errorr>> {
+    ) -> Result<String, Box<()>> {
         let recipients_combined = payload.recipients.join(",");
 
         let api_url = format!(
