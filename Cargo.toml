@@ -1,5 +1,6 @@
 [workspace]
-members = [ "crates/common", "crates/kudi", "crates/plunk","crates/sendgrid", "crates/twilio"]
-
+members = ["crates/common_manifold", "crates/kudi",
+    "crates/plunk","crates/sendgrid", "crates/twilio"]
+resolver = "2"
 
 

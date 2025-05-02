@@ -1,24 +1,23 @@
-# If they don't build 🦀 Rust SDKs, we'll it.
+# If they don’t build 🦀 Rust SDKs, we will.
 
->> Manifold is a crate that contains all-in-one Rust SDKs for projects that have no Rust SDK support
->I noticed many platforms have no Rust SDK support, so i took matters into my hands ( Maybe).
+**Manifold** is a Rust crate that provides unified SDKs for platforms that lack official Rust support.
 
+> After noticing a gap in Rust SDKs for many popular services, I decided to take the initiative and build them, maybe you've been waiting for this too.
 
-``` The current platforms are: ```
+## ✅ Currently Supported Platforms
 
-* Plunk https://www.useplunk.com/
-* Twilio https://console.twilio.com/
-* Sendgrid https://sendgrid.com/en-us
-* KudiSMS https://kudisms.net/
-* Flutterwave and Paystack ( Maybe ).
+- [Plunk](https://www.useplunk.com/) — [📦 crates.io](https://crates.io/crates/plunk)
+- [KudiSMS](https://kudisms.net/) — [📦 crates.io](https://crates.io/crates/kudi_sdk) ✅
+- [Twilio](https://console.twilio.com/)
+- [SendGrid](https://sendgrid.com/en-us)
+- *(Coming Soon)* Flutterwave & Paystack
 
+---
 
+### 💡 Have a platform you'd like to see added?
 
-*Also you are free to raise issues on platforms you feel i/we can add* 
+Feel free to [open an issue](https://github.com/yhoungdev/manifold/issues/new/choose), contributions and suggestions are always welcome!
 
-WAGMI 🚀
+---
 
-
-
-
-
+**WAGMI** 🚀

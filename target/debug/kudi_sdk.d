@@ -1,0 +1,1 @@
+/Users/obiabo/Desktop/Rust_projects/manifold-sdk/target/debug/kudi_sdk: /Users/obiabo/Desktop/Rust_projects/manifold-sdk/crates/kudi/src/main.rs /Users/obiabo/Desktop/Rust_projects/manifold-sdk/crates/kudi/src/types.rs

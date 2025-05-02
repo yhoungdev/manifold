@@ -1,0 +1,10 @@
+/Users/obiabo/Desktop/Rust_projects/manifold-sdk/target/package/plunk-0.1.1/target/debug/deps/libcommon_manifold-a5daeeb39e3825b8.rmeta: /Users/obiabo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/common_manifold-0.1.0/src/lib.rs /Users/obiabo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/common_manifold-0.1.0/src/types/mod.rs /Users/obiabo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/common_manifold-0.1.0/src/types/kudi_types.rs /Users/obiabo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/common_manifold-0.1.0/src/types/plunk_types.rs
+
+/Users/obiabo/Desktop/Rust_projects/manifold-sdk/target/package/plunk-0.1.1/target/debug/deps/libcommon_manifold-a5daeeb39e3825b8.rlib: /Users/obiabo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/common_manifold-0.1.0/src/lib.rs /Users/obiabo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/common_manifold-0.1.0/src/types/mod.rs /Users/obiabo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/common_manifold-0.1.0/src/types/kudi_types.rs /Users/obiabo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/common_manifold-0.1.0/src/types/plunk_types.rs
+
+/Users/obiabo/Desktop/Rust_projects/manifold-sdk/target/package/plunk-0.1.1/target/debug/deps/common_manifold-a5daeeb39e3825b8.d: /Users/obiabo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/common_manifold-0.1.0/src/lib.rs /Users/obiabo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/common_manifold-0.1.0/src/types/mod.rs /Users/obiabo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/common_manifold-0.1.0/src/types/kudi_types.rs /Users/obiabo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/common_manifold-0.1.0/src/types/plunk_types.rs
+
+/Users/obiabo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/common_manifold-0.1.0/src/lib.rs:
+/Users/obiabo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/common_manifold-0.1.0/src/types/mod.rs:
+/Users/obiabo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/common_manifold-0.1.0/src/types/kudi_types.rs:
+/Users/obiabo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/common_manifold-0.1.0/src/types/plunk_types.rs:

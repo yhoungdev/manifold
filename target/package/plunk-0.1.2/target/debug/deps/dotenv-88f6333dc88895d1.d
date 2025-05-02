@@ -1,0 +1,11 @@
+/Users/obiabo/Desktop/Rust_projects/manifold-sdk/target/package/plunk-0.1.2/target/debug/deps/libdotenv-88f6333dc88895d1.rmeta: /Users/obiabo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/dotenv-0.15.0/src/lib.rs /Users/obiabo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/dotenv-0.15.0/src/parse.rs /Users/obiabo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/dotenv-0.15.0/src/errors.rs /Users/obiabo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/dotenv-0.15.0/src/iter.rs /Users/obiabo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/dotenv-0.15.0/src/find.rs
+
+/Users/obiabo/Desktop/Rust_projects/manifold-sdk/target/package/plunk-0.1.2/target/debug/deps/libdotenv-88f6333dc88895d1.rlib: /Users/obiabo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/dotenv-0.15.0/src/lib.rs /Users/obiabo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/dotenv-0.15.0/src/parse.rs /Users/obiabo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/dotenv-0.15.0/src/errors.rs /Users/obiabo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/dotenv-0.15.0/src/iter.rs /Users/obiabo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/dotenv-0.15.0/src/find.rs
+
+/Users/obiabo/Desktop/Rust_projects/manifold-sdk/target/package/plunk-0.1.2/target/debug/deps/dotenv-88f6333dc88895d1.d: /Users/obiabo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/dotenv-0.15.0/src/lib.rs /Users/obiabo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/dotenv-0.15.0/src/parse.rs /Users/obiabo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/dotenv-0.15.0/src/errors.rs /Users/obiabo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/dotenv-0.15.0/src/iter.rs /Users/obiabo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/dotenv-0.15.0/src/find.rs
+
+/Users/obiabo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/dotenv-0.15.0/src/lib.rs:
+/Users/obiabo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/dotenv-0.15.0/src/parse.rs:
+/Users/obiabo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/dotenv-0.15.0/src/errors.rs:
+/Users/obiabo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/dotenv-0.15.0/src/iter.rs:
+/Users/obiabo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/dotenv-0.15.0/src/find.rs:

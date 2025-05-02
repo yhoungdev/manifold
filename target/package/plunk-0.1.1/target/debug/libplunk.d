@@ -1,0 +1,1 @@
+/Users/obiabo/Desktop/Rust_projects/manifold-sdk/target/package/plunk-0.1.1/target/debug/libplunk.rlib: /Users/obiabo/Desktop/Rust_projects/manifold-sdk/target/package/plunk-0.1.1/src/client.rs /Users/obiabo/Desktop/Rust_projects/manifold-sdk/target/package/plunk-0.1.1/src/lib.rs
