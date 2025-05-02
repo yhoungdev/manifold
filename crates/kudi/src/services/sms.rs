@@ -6,11 +6,14 @@ use crate::prelude::SendCorporateEmail;
 use reqwest::Client;
 
 impl KudiClient {
-    pub fn new() -> Self {
-        Self { token, sender_id}
+    pub fn new(token: String, sender_id: String) -> Self {
+        Self { token, sender_id }
     }
 
-    pub fn send_sms_otp(&self, payload: SmsOtpPayload) -> Result<(), Box<dyn std::error::Error>> {
+    pub async fn send_sms_otp(
+        &self,
+        payload: SmsOtpPayload,
+    ) -> Result<String, Box<dyn std::error::Error>> {
         let api_url = format!(
             "https://my.kudisms.net/api/otp?token={}&senderID={}&recipients={}&otp={}&appnamecode={}&templatecode={}",
             payload.token,
@@ -21,21 +24,19 @@ impl KudiClient {
             payload.template_code
         );
         let client = Client::new();
-        let response = client.post(&api_url).send()?;
-
-        let response_text = response.text()?;
-
-        Ok(response_text);
+        let response = client.post(&api_url).send().await?;
+        let response_text = response.text().await?;
+        Ok(response_text)
     }
 
-    pub fn submit_sender_id(
+    pub async fn submit_sender_id(
         &self,
         payload: SenderIdStruct,
     ) -> Result<(), Box<dyn std::error::Error>> {
         let api_url = "https://my.kudisms.net/api/senderID";
         let client = Client::new();
 
-        let response = client.post(api_url).json(&payload).send()?;
+        let response = client.post(api_url).json(&payload).send().await?;
 
         if response.status().is_success() {
             Ok(())
@@ -44,30 +45,31 @@ impl KudiClient {
         }
     }
 
-    pub fn check_sender_id(
+    pub async fn check_sender_id(
         &self,
         sender_id_to_check: &str,
     ) -> Result<SenderIdCheckResponse, Box<dyn std::error::Error>> {
-        let api_url = format!(
-            "https://my.kudisms.net/api/check_senderID?token={}&senderID={}",
-            self.token, sender_id_to_check
-        );
+        let api_url = "https://my.kudisms.net/api/check_senderID";
+
+        let form = [
+            ("token", self.token.as_str()),
+            ("senderID", sender_id_to_check),
+        ];
 
         let client = Client::new();
-        let response = client.get(&api_url).send()?;
+        let response = client.post(api_url).form(&form).send().await?;
 
         if response.status().is_success() {
-            let json: SenderIdCheckResponse = response.json()?;
+            let json = response.json().await?;
             Ok(json)
         } else {
             Err(format!("Failed to check sender ID. Status: {}", response.status()).into())
         }
     }
-
-    pub fn send_bulk_sms(
+    pub async fn send_bulk_sms(
         &self,
         payload: SendBulkSmsPayload,
-    ) -> Result<String, Box<() , dyn std::error::Error>> {
+    ) -> Result<String, Box<dyn std::error::Error>> {
         let recipients_combined = payload.recipients.join(",");
 
         let api_url = format!(
@@ -79,10 +81,10 @@ impl KudiClient {
         );
 
         let client = Client::new();
-        let response = client.get(&api_url).send()?;
+        let response = client.post(&api_url).send().await?;
 
         if response.status().is_success() {
-            let text = response.text()?;
+            let text = response.text().await?;
             Ok(text)
         } else {
             Err(format!("Failed to send SMS: {}", response.status()).into())

@@ -1,4 +1,4 @@
-use serde::Serialize;
+use serde::{Deserialize, Serialize};
 
 pub struct KudiClient {
     pub token: String,
@@ -35,6 +35,7 @@ pub struct SendCorporateEmail {
     message: String,
 }
 
+#[derive(Deserialize, Debug)]
 pub struct SenderIdCheckResponse {
     pub status: String,
     pub message: Option<String>,
